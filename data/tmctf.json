@@ -1,4 +1,4 @@
-[
+{
 	"2019-02-11": {"sneezes":2, "throatClears": 6, "coughs":25},
 	"2019-02-12": {"sneezes":0, "throatClears": 21, "coughs":14},
 	"2019-02-14": {"sneezes":1, "throatClears": 16, "coughs":5},
@@ -175,5 +175,5 @@
 	"2020-02-10": {"beforeLunch" : {"sneezes":1, "throatClears": 18, "coughs":7}, "afterLunch" : {"sneezes":0, "throatClears": 5, "coughs":0}},
 	"2020-02-11": {"beforeLunch" : {"sneezes":1, "throatClears": 6, "coughs":2}, "afterLunch" : {"sneezes":0, "throatClears": 36, "coughs":9}},
 	"2020-02-12": {"beforeLunch" : {"sneezes":1, "throatClears": 12, "coughs":5}, "afterLunch" : {"sneezes":0, "throatClears": 5, "coughs":0}},
-	"2020-02-13": {"beforeLunch" : {"sneezes":0, "throatClears": 20, "coughs":3}, "afterLunch" : {"sneezes":0, "throatClears": 40, "coughs":9}},
-]
+	"2020-02-13": {"beforeLunch" : {"sneezes":0, "throatClears": 20, "coughs":3}, "afterLunch" : {"sneezes":0, "throatClears": 40, "coughs":9}}
+}
