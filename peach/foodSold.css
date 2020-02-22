@@ -1,3 +1,50 @@
 table, tr, th, td {
 	border: thin inset #808080;
 }
+
+body {
+	display: grid;
+	grid-template-areas: 	"header"
+				"nav"
+				"content"
+				"footer";
+	width: 100%;
+	max-width: 800px;
+	grid-gap: 5px;
+}
+header {
+	grid-area: header;
+}
+nav {
+	grid-area: nav;
+}
+main {
+	grid-area: content;
+}
+
+footer {
+	grid-area: footer;
+	padding: 1em;
+	border-top: solid thin black;
+}
+#bannerImg {
+	width: 80%;
+	height: 90%;
+	max-width: 800px;
+}
+@media (min-width: 800px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 2fr 2fr;
+		grid-template-areas: 	"nav header header"
+					"nav content content"
+					"footer footer footer";
+		width: 100%;
+		grid-gap: 5px;
+	}
+	nav {
+		grid-area: nav;
+		margin: 0 1.5em;
+		min-width: 13em;
+	}
+}
