@@ -80,6 +80,25 @@ footer {
 	border-left: thick solid black;
 }
 
+.formDiv {
+	margin: 0.75em 0;
+}
+
+.formDiv label:first-child {
+	display: block;
+	font-weight: bold;
+}
+.formDiv input, .formDiv textarea {
+	width: 40em;
+}
+.formDiv input[type="checkbox"] {
+	width: 1em;
+}
+
+.formDiv textarea {
+	height: 8em;
+}
+
 @media (min-width: 800px) {
 	body {
 		display: grid;
