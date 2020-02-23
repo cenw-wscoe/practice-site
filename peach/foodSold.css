@@ -18,6 +18,44 @@ header {
 nav {
 	grid-area: nav;
 }
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	padding-left: 1em;
+}
+#wb-tphp {
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.wb-slc {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+    z-index: 3;
+}
+.wb-sl {
+	clip: rect(1px,1px,1px,1px);
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+.wb-disable .wb-slc .wb-sl,.wb-show-onfocus:focus,.wb-sl:focus {
+	clip:rect(auto,auto,auto,auto);
+	height:inherit;
+	margin:inherit;
+	overflow:inherit;
+	position:static;
+	width:inherit;
+	background-color: white;
+}
+.dest:focus, .dest:focus-visible, :target:focus-visible, .dest:active {
+border: thick solid red;
+}
 main {
 	grid-area: content;
 }
@@ -32,11 +70,24 @@ footer {
 	height: 90%;
 	max-width: 800px;
 }
+.invisibleStuff {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	margin: 0;
+}
+
+.navcurr {
+	border-left: thick solid black;
+}
+
 @media (min-width: 800px) {
 	body {
 		display: grid;
 		grid-template-columns: 1fr 2fr 2fr;
-		grid-template-areas: 	"nav header header"
+		grid-template-areas: 	"nonheader header header"
 					"nav content content"
 					"footer footer footer";
 		width: 100%;

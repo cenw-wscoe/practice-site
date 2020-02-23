@@ -1,27 +1,3 @@
-function init () {
-	console.log ("Initing.");
-	getData();
-} // End of init
-
-
-function getRemoteFile (file, callback) {
-	var xmlhttp=new XMLHttpRequest();
-
-	xmlhttp.open("GET",file,true);
-	xmlhttp.onreadystatechange=function () {
-		if (xmlhttp.readyState == 4) {
-			if (xmlhttp.status == 404) {
-				callback("404");
-			}
-			if (xmlhttp.status == 0 || xmlhttp.status == 200) {
-				callback(xmlhttp.responseText);
-			}
-		}
-	}
-	xmlhttp.send();
-} // end of getRemoteFile
-
-
 function createTable (data) {
 	if (data == "404") {
 		console.error ("404!");
@@ -66,7 +42,7 @@ function createTable (data) {
 						var blTH = document.createElement("th");
 						blTH.innerHTML = "Before Lunch";
 						blTH.setAttribute("id", "bl" + totalDays);
-						blTH.setAttribute("headers", "period");
+						blTH.setAttribute("headers", "period date-" + dte);
 						tr.append(blTH);
 						
 						var blsnTD = document.createElement("td");
@@ -106,7 +82,7 @@ function createTable (data) {
 						var alTR = document.createElement("tr");
 						var alTH = document.createElement("th");
 
-						alTH.setAttribute("headers", "period");
+						alTH.setAttribute("headers", "period date-" + dte);
 						alTH.setAttribute("id", "al" + totalDays);
 						alTH.innerHTML = "After Lunch";
 						alTR.append(alTH);
@@ -149,7 +125,7 @@ function createTable (data) {
 						var totTR = document.createElement("tr");
 						var totTH = document.createElement("th");
 						totTH.setAttribute("id", "tot" + totalDays);
-						totTH.setAttribute("headers", "period");
+						totTH.setAttribute("headers", "period date-" + dte);
 						totTH.innerHTML = "Daily Total";
 						totTR.append(totTH);
 
@@ -189,7 +165,7 @@ function createTable (data) {
 						
 					} else {
 						var blTH = document.createElement("th");
-						blTH.setAttribute("headers", "period");
+						blTH.setAttribute("headers", "period date-" + dte);
 						blTH.setAttribute("id", "bl" + totalDays);
 						blTH.innerHTML = "Before Lunch";
 						tr.append(blTH);
@@ -216,7 +192,7 @@ function createTable (data) {
 
 						var alTR = document.createElement("tr");
 						var alTH = document.createElement("th");
-						alTH.setAttribute("headers", "period");
+						alTH.setAttribute("headers", "period date-" + dte);
 						alTH.setAttribute("id", "al" + totalDays);
 						alTH.innerHTML = "After Lunch";
 						alTR.append(alTH);
@@ -244,7 +220,7 @@ function createTable (data) {
 
 						var totTR = document.createElement("tr");
 						var totTH = document.createElement("th");
-						totTH.setAttribute("headers", "period");
+						totTH.setAttribute("headers", "period date-" + dte);
 						totTH.setAttribute("id", "tot" + totalDays);
 						totTH.innerHTML = "Daily Total";
 						totTR.append(totTH);
@@ -300,7 +276,7 @@ function createTable (data) {
 					totalsTR.append(totTH);
 				
 					var blTH = document.createElement("th");
-					blTH.setAttribute("headers", "period");
+					blTH.setAttribute("headers", "period ftotalTH");
 					blTH.setAttribute("id", "ftotalBLTH");
 					blTH.innerHTML = "Before Lunch";
 					totalsTR.append(blTH);
@@ -331,8 +307,8 @@ function createTable (data) {
 
 					var alTR = document.createElement("tr");
 					var alTH = document.createElement("th");
-					alTH.setAttribute("headers", "period");
-					totTH.setAttribute("id", "ftotalALTH");
+					alTH.setAttribute("headers", "period ftotalTH");
+					alTH.setAttribute("id", "ftotalALTH");
 					alTH.innerHTML = "After Lunch";
 					alTR.append(alTH);
 
@@ -362,31 +338,31 @@ function createTable (data) {
 
 					var totTR = document.createElement("tr");
 					var totTH = document.createElement("th");
-					totTH.setAttribute("headers", "period");
+					totTH.setAttribute("headers", "period ftotalTH");
 					totTH.setAttribute("id", "ftotalTotTH");
 					totTH.innerHTML = "Daily Total";
 					totTR.append(totTH);
 
 					var totsntotTD = document.createElement("td");
-					totsntotTD.setAttribute("headers", "ftotalTotTH sneeze");
+					totsntotTD.setAttribute("headers", "ftotalTH ftotalTotTH sneeze");
 					totsntotTD.innerHTML = totsntot;
 					totTot += totsntot;
 					totTR.append(totsntotTD);
 
 					var tottctotTD = document.createElement("td");
-					totsntotTD.setAttribute("headers", "ftotalTotTH throatClears");
+					tottctotTD.setAttribute("headers", "ftotalTH ftotalTotTH throatClears");
 					tottctotTD.innerHTML = tottctot;
 					totTot += tottctot;
 					totTR.append(tottctotTD);
 
 					var totctotTD = document.createElement("td");
-					totsntotTD.setAttribute("headers", "ftotalTotTH coughs");
+					totctotTD.setAttribute("headers", "ftotalTH ftotalTotTH coughs");
 					totctotTD.innerHTML = totctot;
 					totTot += totctot;
 					totTR.append(totctotTD);
 
 					var tottottotTD = document.createElement("td");
-					totsntotTD.setAttribute("headers", "ftotalTotTH totalNoises");
+					totsntotTD.setAttribute("headers", "ftotalTH ftotalTotTH totalNoises");
 					tottottotTD.innerHTML = totTot;
 					totTR.append(tottottotTD);
 					tfoot.append(totTR);
@@ -582,11 +558,11 @@ function createTable (data) {
 					tfoot.append(totmTR);
 				}
 			} else {
-				console.log ("Didn't get tbody");
+				console.error ("Didn't get tbody");
 			}
 
 		} else {
-			console.log ("Did not get table.");
+			console.error ("Did not get table.");
 		}
 	}
 } // End of createTable
@@ -600,7 +576,4 @@ function getData () {
 
 } // End of getData
 
-
-
-
-document.addEventListener("DOMContentLoaded", init, false);
+document.addEventListener("DOMContentLoaded", getData, false);
