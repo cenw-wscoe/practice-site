@@ -53,9 +53,6 @@ nav ul li {
 	width:inherit;
 	background-color: white;
 }
-.dest:focus, .dest:focus-visible, :target:focus-visible, .dest:active {
-border: thick solid red;
-}
 main {
 	grid-area: content;
 }
