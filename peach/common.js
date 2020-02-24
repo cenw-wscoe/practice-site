@@ -2,6 +2,9 @@ function init () {
 	console.log ("Initing.");
 	setupFocus();
 	getLeftNav();
+	var submitBtn = null;
+	submitBtn = document.getElementById("submitBtn");
+	if (submitBtn) submitBtn.addEventListener("click", function (e) {e.preventDefault(); window.location.href="contacted.html";}, false);
 } // End of init
 
 
