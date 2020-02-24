@@ -9,9 +9,8 @@ body {
 				"content"
 				"footer";
 	width: 100%;
-	max-width: 790px;
-	margin: 0;
-	grid-gap: 2px;
+	max-width: 800px;
+	grid-gap: 5px;
 }
 header {
 	grid-area: header;
@@ -66,7 +65,7 @@ footer {
 #bannerImg {
 	width: 80%;
 	height: 90%;
-	max-width: 794px;
+	max-width: 800px;
 }
 .invisibleStuff {
 	position: absolute;
@@ -90,7 +89,7 @@ footer {
 	font-weight: bold;
 }
 .formDiv input, .formDiv textarea {
-	width: 20em;
+	width: 40em;
 }
 .formDiv input[type="checkbox"] {
 	width: 1em;
@@ -114,9 +113,5 @@ footer {
 		grid-area: nav;
 		margin: 0 1.5em;
 		min-width: 13em;
-	}
-
-	.formDiv input, .formDiv textarea {
-		width: 40em;
 	}
 }
