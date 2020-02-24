@@ -1,0 +1,19 @@
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+	width: 60px;
+	padding: 0.4em;
+	background-color: #A0A0A0;
+	border: 1px solid #A0A0A0;
+}
+.h1 {
+	font-weight: 800;
+	font-size: 200%;
+}
+#throatyMcThroatFaceTable, #throatyMcThroatFaceTable td {
+border: thin inset #808080;
+}
