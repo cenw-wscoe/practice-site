@@ -1,7 +1,7 @@
 function init () {
 	console.log ("Initing.");
 	setupFocus();
-	getLeftNav();
+	//getLeftNav();
 } // End of init
 
 
