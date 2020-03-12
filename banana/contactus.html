@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Jim Norton's</title>
 		<link rel="Stylesheet" type="text/css" href="banana.css">
@@ -15,32 +15,43 @@
 						<h2 style="display:none" id="siteMenuHeading">Site Menu</h2>
 						<p>Javascript must be enabled to view the site menu.</p>
 				</td>
-
 				<td>
 					<table>
 						<tr>
-							<td><div id="wb-cont" class="h1">Jim Norton's</div><td>
+							<td colspan="2"><div id="wb-cont" class="h1">Jim Norton's</div><td>
 						</tr>
 						<tr>
-							<td><div class="h1">Welcome!</div></td>
+							<td colspan="2"><div class="h1">Welcome!</div></td>
 						</tr>
 						<tr>
-							<td>
-								<ul>
-									<li>Jim Norton's Coffee Shop was started in 2019 selling snow-peas with pepper, tuna casserole, and coffee.  While we have received some noise complaints, we figure if our neighbours don't like it, <em>they</em> can be the ones to leave!</li>
-									<br><br>
-									<li><em>"The tuna casserole will raise your blood pressure more than the coffee!"</em></li>
-									<br><br>
-									<li><i>My Doctor</i></li>
-									<br><br>
-									<li>So come on down!  Located in the heart of Nordburg, just one block north of the police station.  (Take <em>that</em> you noise-complainers!)  If you're lucky you'll get to meet our town super-hero!</li>
-								</ul>
+							<td><form method="POST" action="contacted.html">
+								<b>Your name:</b>
 							</td>
+							<td><input type="text" id="name" name="name" size="80"></td>
+						</tr>
+						<tr>
+							<td><b>Your email:</b></td>
+							<td><input type="text" id="emailaddy" name="emailaddy" size="80"></td>
+						</tr>
+						<tr>
+							<td><b>Your comments:</b></td>
+							<td><textarea id="comments" name="comments" cols="80" rows="8"></textarea></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" id="respond" name="respond"></td>
+							<td><b>I would like a response</b></td>
+						</tr>
+						<tr>
+							<td colspan="2"><ul><li>Note that this site is a practice site, and your comments won't actually go anywhere, and no matter what, you will <strong>not</strong> receive a response, except your own bitter disappointment.</li></ul></td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="btn" onclick="window.location.href='contacted.html'">Submit</div></td>
 						</tr>
 					</table>
+				</form>
 				</td>
 			</tr>
-			<tr>
+		<tr>
 				<td colspan="2">
 					<h4 style="display:none;">About This Site</h4>
 					<a href="index.html">Click here</a> to return home.
@@ -52,5 +63,4 @@
 		<script src="common.js"></script>
 	</body>
 </html>
-
 

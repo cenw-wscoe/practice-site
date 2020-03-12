@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Jim Norton's Coffee Shop</title>
+		<title>Contact Jim Norton's</title>
 		<link rel="Stylesheet" type="text/css" href="foodSold.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	</head>
@@ -16,14 +16,29 @@
 		<img src="../images/jim_nortons_banner.png" alt="Jim Nortons' Coffee Shop logo" id="bannerImg">
 		</header>
 		<main>
-			<h1 id="wb-cont" tabindex="-1" class="dest">Jim Norton's Coffee Shop</h1>
-			<div>
-			<h2>Welcome to Jim Norton's!</h2>
-				<p>Jim Norton's Coffee Shop was started in 2019 selling snow-peas with pepper, tuna casserole, and coffee.  While we have received some noise complaints, we figure if our neighbours don't like it, <em>they</em> can be the ones to leave!</p>
-				<blockquote><p>"The tuna casserole will raise your blood pressure more than the coffee!"</p>
-				<cite>My Doctor</cite></blockquote>
-				<p>So come on down!  Located in the heart of Nordburg, just one block north of the police station.  (Take <em>that</em> you noise-complainers!)  If you're lucky you'll get to meet our town super-hero!</p>
+			<h1 id="wb-cont" tabindex="-1" class="dest">Contact Jim Norton's</h1>
+			<form method="POST" action="contacted.html">
+			<div class="formDiv">
+				<label for="name">Your name:</label>
+				<input type="text" id="name" name="name">
 			</div>
+			<div class="formDiv">
+				<label for="emailaddy">Your email:</label>
+				<input type="email" id="emailaddy" name="emailaddy">
+			</div>
+			<div class="formDiv">
+				<label for="comments">Your comments:</label>
+				<textarea id="comments" name="comments"></textarea>
+			</div>
+			<div class="formDiv">
+				<input type="checkbox" id="respond" name="respond">
+				<label for="respond">I would like a response</label>
+			</div>
+			<p id="practiceDesc">Note that this site is a practice site, and your comments won't actually go anywhere, and no matter what, you will <strong>not</strong> receive a response, except your own bitter disappointment.</p>
+			<div class="formDiv">
+				<button type="submit" id="submitBtn" name="submitBtn" aria-describedby="practiceDesc">Submit</button>
+			</div>
+			</form>
 		</main>
 		<nav id="siteMenu" tabindex="-1">
 			<h2 class="wb-inv invisibleStuff" id="siteMenuHeading">Site Menu</h2>
@@ -37,5 +52,4 @@
 		<script src="common.js"></script>
 	</body>
 </html>
-
 
