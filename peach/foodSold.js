@@ -294,13 +294,13 @@ function createTable (data) {
 					totalsTR.append(bltctotTD);
 
 					var blctotTD = document.createElement("td");
-					blctotTD.setAttribute("headers", "ftotalTH ftotalBLTH clears");
+					blctotTD.setAttribute("headers", "ftotalTH ftotalBLTH coughs");
 					blctotTD.innerHTML = blctot;
 					blTot += blctot;
 					totalsTR.append(blctotTD);
 
 					var bltottotTD = document.createElement("td");
-					bltottotTD.setAttribute("headers", "ftotalTH ftotalBLTH dailyNoises");
+					bltottotTD.setAttribute("headers", "ftotalTH ftotalBLTH totalNoises");
 					bltottotTD.innerHTML = blTot;
 					totalsTR.append(bltottotTD);
 
