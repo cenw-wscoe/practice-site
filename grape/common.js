@@ -92,5 +92,12 @@ function getLeftNav () {
 	getRemoteFile("leftMenu.html", genLeftMenu);
 } // End of getLeftNav
 
+function addIDs () {
+	let header = document.getElementsByTagName("header");
+	let main = document.getElementsByTagName("main");
+
+	header[0].setAttribute("id", "sec1");
+	main[0].setAttribute("id", "sec1");
+}
 
 document.addEventListener("DOMContentLoaded", init, false);
