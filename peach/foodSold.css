@@ -8,16 +8,18 @@ body {
 				"nav"
 				"content"
 				"footer";
-	width: 100%;
-	max-width: 790px;
 	margin: 0;
-	grid-gap: 2px;
+	/*grid-gap: 2px;*/
+	max-width: 790px;
+	width: 100%;
 }
 header {
 	grid-area: header;
+	width: 100%;
 }
 nav {
 	grid-area: nav;
+	width: 100%;
 }
 nav ul {
 	list-style: none;
@@ -56,13 +58,16 @@ nav ul li {
 }
 main {
 	grid-area: content;
+	width: 100%;
 }
 
 footer {
 	grid-area: footer;
-	padding: 1em;
+	padding: 1em 0;
 	border-top: solid thin black;
+	width: 100%;
 }
+
 #bannerImg {
 	width: 80%;
 	height: 90%;
@@ -99,7 +104,25 @@ footer {
 .formDiv textarea {
 	height: 8em;
 }
-
+#tableHolder {
+	max-width: 80%;
+	overflow-x: scroll;
+	padding: 0;
+	margin: 2em 1%;
+}
+/*
+table {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+th, td {
+	/*
+	word-break: break-all;
+	font-size: 50%;
+ * /
+}
+*/
 @media (min-width: 800px) {
 	body {
 		display: grid;

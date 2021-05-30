@@ -29,7 +29,7 @@ function createTable (data) {
 					tbody.appendChild(tr);
 					var dateTH = document.createElement("th");
 					dateTH.setAttribute("rowspan", "3");
-					dateTH.innerHTML = dte;
+					dateTH.innerHTML = dte; //.replace(/-/, "<br>");
 					dateTH.setAttribute("id", "date-" + dte);
 					dateTH.setAttribute("headers", "date");
 					tr.appendChild(dateTH);
