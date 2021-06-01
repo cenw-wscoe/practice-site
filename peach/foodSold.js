@@ -372,16 +372,16 @@ function createTable (data) {
 					tfoot.appendChild(avgTR);
 					
 					var avgTH = document.createElement("th");
-					avgTH.innerHTML = "Averages";
 					avgTH.setAttribute("id", "avgTH");
 					avgTH.setAttribute("rowspan", "3");
 					avgTR.appendChild(avgTH);
+					avgTH.innerHTML = "Averages";
 
 					var blaTH = document.createElement("th");
-					blaTH.innerHTML = "Before Lunch";
 					blaTH.setAttribute("id", "blaTH");
-					blaTH.setAttribute("headers", "avgTH period");
+					blaTH.setAttribute("headers", "period avgTH");
 					avgTR.appendChild(blaTH);
+					blaTH.innerHTML = "Before Lunch";
 					
 					var blsnaTD = document.createElement("td");
 					blsnaTD.innerHTML = (blsntot / totalDays).toFixed(2);
@@ -405,7 +405,7 @@ function createTable (data) {
 
 					var alaTR = document.createElement("tr");
 					var alaTH = document.createElement("th");
-					alaTH.setAttribute("headers", "avgTH period");
+					alaTH.setAttribute("headers", "period avgTH");
 					alaTH.setAttribute("id", "alaTH");
 					alaTH.innerHTML = "After Lunch";
 					alaTR.appendChild(alaTH);
@@ -435,7 +435,7 @@ function createTable (data) {
 					var totaTR = document.createElement("tr");
 					var totaTH = document.createElement("th");
 					totaTH.innerHTML = "Daily Total (" + totalDays + ")";
-					totaTH.setAttribute("headers", "avgTH period");
+					totaTH.setAttribute("headers", "period avgTH");
 					totaTH.setAttribute("id", "totaTH");
 					totaTR.appendChild(totaTH);
 
@@ -469,14 +469,14 @@ function createTable (data) {
 					
 					var maxTH = document.createElement("th");
 					maxTH.setAttribute("id", "maxTH");
-					maxTH.innerHTML = "Maximums";
 					maxTH.setAttribute("rowspan", "3");
+					maxTH.innerHTML = "Maximums";
 					maxTR.appendChild(maxTH);
 
 					var blmTH = document.createElement("th");
 					blmTH.innerHTML = "Before Lunch";
 					blmTH.setAttribute("id", "blMTH");
-					blmTH.setAttribute("headers", "period");
+					blmTH.setAttribute("headers", "period maxTH");
 					maxTR.appendChild(blmTH);
 					
 					var blsnmTD = document.createElement("td");
@@ -502,7 +502,7 @@ function createTable (data) {
 					var almTR = document.createElement("tr");
 					var almTH = document.createElement("th");
 					almTH.setAttribute("id", "alMTH");
-					almTH.setAttribute("headers", "period");
+					almTH.setAttribute("headers", "period maxTH");
 					almTH.innerHTML = "After Lunch";
 					almTR.appendChild(almTH);
 
@@ -530,7 +530,7 @@ function createTable (data) {
 					var totmTR = document.createElement("tr");
 					var totmTH = document.createElement("th");
 					totmTH.setAttribute("id", "maxDTTH");
-					totmTH.setAttribute("headers", "period");
+					totmTH.setAttribute("headers", "period maxTH");
 					totmTH.innerHTML = "Daily Total (" + totalDays + ")";
 					totmTR.appendChild(totmTH);
 
