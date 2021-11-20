@@ -1,18 +1,27 @@
+let full = false;
+
 function createTable (data) {
 	if (data == "404") {
 		console.error ("404!");
 	} else {
 		data = JSON.parse(data);
-		console.log ("Got " + data);
+		if (dbug) console.log ("Got " + data);
 		var table, tbody = null;
 		table = document.getElementById("throatyMcThroatFaceTable");
 		if (table) {
-			console.log ("Got table");
+			if (dbug) console.log ("Got table");
 			tbody = table.getElementsByTagName("tbody");
 			if (tbody) {
-				console.log ("Got body");
+				if (dbug) console.log ("Got body");
 				tbody=tbody[0];
 	
+				let full = false;
+				let params = (new URL(document.location)).searchParams;
+				if (params.get("full")) {
+					// Do stuff
+					if (params.get("full") == "true") full = true;
+				}
+
 				var blsntot = 0, alsntot = 0, totsntot=0;
 				var bltctot = 0, altctot = 0, tottctot=0;
 				var blctot = 0, alctot = 0, totctot=0;
@@ -23,6 +32,8 @@ function createTable (data) {
 				var totalDays = 0;
 
 				for (var dte in data) {
+					if (!full && !dte.match(/5$/)) continue;
+
 					totalDays++;
 					var total = 0, tottot =0;
 					var tr = document.createElement("tr");
@@ -568,9 +579,14 @@ function createTable (data) {
 } // End of createTable
 
 function getData () {
+	let params = (new URL(document.location)).searchParams;
+	if (params.get("full")) {
+		if (params.get("full") == "true") full = true;
+	}
+
 	//var prefix = "/~/andrewnordlund/practice-site";
 	var prefix = "..";
-	console.log ("Getting: " + prefix + "/data/tmctf.json");
+	if (dbug) console.log ("Getting: " + prefix + "/data/tmctf.json");
 
 	getRemoteFile(prefix + "/data/tmctf.json", createTable);
 
