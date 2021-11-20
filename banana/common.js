@@ -1,5 +1,11 @@
+let dbug = false;
 function init () {
-	console.log ("Initing.");
+	let params = (new URL(document.location)).searchParams;
+	if (params.get("dbug")) {
+		if (params.get("dbug") == "true") dbug = true;
+	}
+
+	if (dbug) console.log ("Initing.");
 	setupFocus();
 	//getLeftNav();
 } // End of init
@@ -23,7 +29,7 @@ function getRemoteFile (file, callback) {
 } // end of getRemoteFile
 
 function blurring (e) {
-	console.log ("Blurring " + e);
+	if (dbug) console.log ("Blurring " + e);
 	e.target.removeEventListener("blur", blurring);
 	e.target.removeAttribute("style");
 } // End of blurring
@@ -51,9 +57,9 @@ function setupFocus() {
 	var sls = [];
 
 	sls = document.querySelectorAll(".wb-sl");
-	console.log ("Got "  + sls.length + ".");
+	if (dbug) console.log ("Got "  + sls.length + ".");
 	for (var i = 0; i < sls.length; i++) {
-		//console.log ("el: " + sls[i] + ".");
+		//if (dbug) console.log ("el: " + sls[i] + ".");
 		sls[i].addEventListener("click", throwFocus, false);
 	}
 } // End of setupFocus

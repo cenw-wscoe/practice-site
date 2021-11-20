@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg17766"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17768"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-others="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="1.8116734"
+     inkscape:cx="198.15933"
+     inkscape:cy="432.47308"
+     inkscape:window-width="1665"
+     inkscape:window-height="993"
+     inkscape:window-x="203"
+     inkscape:window-y="111"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs17763">
+    <linearGradient
+       id="linearGradient47045"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#672105;stop-opacity:1;"
+         offset="0"
+         id="stop47043" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient42772"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop42770" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00001f;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
+       d="m 11.537445,106.46579 c 30.423043,-0.015 59.521805,-19.028916 91.715385,-7.448218"
+       id="path40173"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/andrewnordlund/Sites/practice-site/images/jim_nortons_banner.png"
+       inkscape:export-xdpi="173.72"
+       inkscape:export-ydpi="173.72" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:'Savoye LET';-inkscape-font-specification:'Savoye LET, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2714ff;fill-opacity:1;stroke:#000100;stroke-width:0.27;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="text41928"
+       inkscape:export-filename="/Users/andrewnordlund/Sites/practice-site/images/jim_nortons_banner.png"
+       inkscape:export-xdpi="173.72"
+       inkscape:export-ydpi="173.72"><textPath
+         xlink:href="#path40173"
+         id="textPath47391"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Savoye LET';-inkscape-font-specification:'Savoye LET, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2714ff;fill-opacity:1;stroke:#000100;stroke-width:0.27;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="tspan41930">Jim Norton's Coffee Shop</tspan></textPath></text>
+  </g>
+</svg>

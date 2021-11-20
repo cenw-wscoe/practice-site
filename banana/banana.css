@@ -8,6 +8,7 @@ a {
 	width: 60px;
 	padding: 0.4em;
 	background-color: #A0A0A0;
+	color: #3A3B3A;
 	border: 1px solid #A0A0A0;
 }
 .h1 {
@@ -15,5 +16,5 @@ a {
 	font-size: 200%;
 }
 #throatyMcThroatFaceTable, #throatyMcThroatFaceTable td {
-border: thin inset #808080;
+	border: thin inset #808080;
 }
