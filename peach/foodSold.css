@@ -57,6 +57,8 @@ nav ul li {
 main {
 	grid-area: content;
 	width: 100%;
+}
+main#foodSoldMain {
 	overflow-x:scroll;
 }
 
