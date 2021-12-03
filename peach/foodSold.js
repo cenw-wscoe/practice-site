@@ -365,7 +365,7 @@ function createTable (data) {
 					totTR.appendChild(totctotTD);
 
 					var tottottotTD = document.createElement("td");
-					totsntotTD.setAttribute("headers", "ftotalTH ftotalTotTH totalNoises");
+					tottottotTD.setAttribute("headers", "ftotalTH ftotalTotTH totalNoises");
 					tottottotTD.innerHTML = totTot;
 					totTR.appendChild(tottottotTD);
 					tfoot.appendChild(totTR);
